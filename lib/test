@@ -1,0 +1,12 @@
+ static Future<NewsModel> getNews(String source) async{
+   Uri url=Uri.parse('https://newsapi.org/v2/everything?apiKey=8af38e4ccd7f4145b5b4a5613822749c&sources=$source');
+   Response response= await http.get(url);
+   var jasonData=jsonDecode(response.body);
+   NewsModel data=NewsModel.fromJson(jasonData);
+return data;
+
+
+
+
+
+
