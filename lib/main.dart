@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/screens/card_details.dart';
 import 'Layouts/home_layout.dart';
 
 void main() {
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: HomeLayout.routeName,
     routes: {
-        HomeLayout.routeName:(context) => const  HomeLayout(),
+        HomeLayout.routeName:(context) =>   HomeLayout(),
+      CardDetails.routeName:(context) =>   CardDetails(),
     },
     );
   }

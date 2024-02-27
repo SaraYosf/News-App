@@ -15,6 +15,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Text("Pick your category",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:Colors.blueGrey,)),
         Expanded(
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
